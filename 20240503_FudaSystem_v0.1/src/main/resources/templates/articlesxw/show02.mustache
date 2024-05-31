@@ -1,0 +1,17 @@
+{{>articles/articlesShang}}
+<hr>
+{{#actentity}}
+<form class="container" action="/articlesxw/create" method="post">
+    <div style="text-align: center;"><h2><strong>新闻详解</strong></h2></div><hr>
+    <div class="mb-3"><p class="form-control" type="text" name="xingming" value="{{xingming}}" ></p></div>
+    <br><textarea class="form-control"  name="anjiangaishu" rows="15"  value="{{anjiangaishu}}"  ></textarea>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <!--    <p></p>-->
+    <br><br>
+    <a href="/articlesht/{{actentity.id}}/edit" class="btn btn-primary">Edit</a>
+    <!-- GET , a 태그 링크를 사용 -->
+    <!--<a href="/articlesht/{{actentity.id}}/delete" class="btn btn-danger">Delete</a>-->
+    <a href="/articlesht" class="btn btn-primary">Go to ArticlesList</a>
+</form>
+{{/actentity}}
+{{>articles/articlesXia}}

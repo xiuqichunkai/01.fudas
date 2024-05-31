@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Fuda Caindan Sheji</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/SimpleSidebar/assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/SimpleSidebar/css/styles.css" rel="stylesheet" />
+
+    <!---->
+    <!-- Bootstrap core JS-->
+    <!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>-->
+    <script src="/bootstrap-5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="/btsFrontpage/js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <meta name="_csrf" content="{{_csrf.token}}"/>
+    <meta name="_csrf_header" content="{{_csrf.headerName}}"/>
+
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar-->
+    <div class="border-end bg-white" id="sidebar-wrapper">
+        <div class="sidebar-heading border-bottom bg-light">Menu</div>
+        <div class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda"                 >首页</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/jieshao"         >孚达介绍</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/huanjijng"       >孚达环境</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/chengyuan"       >孚达成员</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/anli"            >孚达案例</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/xinwen"          >孚达新闻</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/dangjiantuanjian">党建团建</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/lianxiwomen"     >联系我们</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="/fuda/new"             >在线咨询</a>
+        </div>
+    </div>
+    <!-- Page content wrapper-->
+    <div id="page-content-wrapper">
+        <!-- Top navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <!--                                <li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>-->
+                        <!--                                <li class="nav-item"><a class="nav-link" href="#!">Link</a></li>-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="/index" role="button" >账户</a>
+<!--                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="/index" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">账户</a>-->
+<!--                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">-->
+<!--                                <a class="dropdown-item" href="/index">登录</a>-->
+<!--                                &lt;!&ndash;                                        <a class="dropdown-item" href="#!">退出登录</a>&ndash;&gt;-->
+<!--                                <div class="dropdown-divider"></div>-->
+<!--                                <a class="dropdown-item" href="/fuda">退出登录</a>-->
+<!--                            </div>-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container-fluid">

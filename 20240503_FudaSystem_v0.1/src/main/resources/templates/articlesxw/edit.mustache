@@ -1,0 +1,19 @@
+{{>articles/articlesShang}}
+{{#articleXwEntity}}
+<form class="container" action="/articlesxw/update" method="post">
+    <input name="id" type="hidden" value="{{id}}" />
+    <div class="mb-3">
+        <label class="form-label">新闻</label>
+        <input class="form-control" type="text" name="xingming" value="{{xingming}}"></input>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">新闻内容</label>-->
+        <input class="form-control" type="text" name="anjiangaishu" value="{{anjiangaishu}}" ></input>
+    </div>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <button type="submit" class="btn btn-primary">提交</button>
+    <a href="/articlesxw/{{articleXwEntity.id}}">Back</a>
+</form>
+{{/articleXwEntity}}
+
+{{>articles/articlesXia}}

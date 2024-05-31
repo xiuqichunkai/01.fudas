@@ -1,0 +1,20 @@
+{{>articles/articlesShang}}
+<hr>
+<form class="container" action="/articlesht/create" method="post">
+    <div style="text-align: center;"><h2><strong>咨询案件</strong></h2></div><br>
+    <div class="mb-3"><input class="form-control" type="text" name="xingming" placeholder="姓 名..."  ></input></div>
+    <br><div class="mb-3"><input class="form-control" type="text" name="shoujihao" placeholder="您的手机号码..."  ></input></div>
+    <br><div class="mb-3"><input class="form-control" type="text" name="sweixin" placeholder="您的微信..."  ></input></div>
+    <br><div class="mb-3"><input class="form-control" type="text" name="youxiang" placeholder="您的邮箱..."  ></input></div>
+    <br><textarea class="form-control"  name="anjiangaishu" rows="10" placeholder="案件概述..." ></textarea>
+    <!--    <p></p>-->
+    <br><br>
+
+    <div>
+    <div id="liveAlertPlaceholder"></div>
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+    <div style="text-align: center;"> <button class="btn btn-primary" type="submit" ><h3>提交</h3></button> </div>
+    </div>
+    <br><br>
+</form>
+{{>articles/articlesXia}}

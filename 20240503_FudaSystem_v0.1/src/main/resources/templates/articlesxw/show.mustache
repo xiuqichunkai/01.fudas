@@ -1,0 +1,25 @@
+{{>articles/articlesShang}}
+{{#actentity}}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <h1><td align="center"><b>{{xingming}}</b></td></h1><br>
+    </tr>
+    </thead>
+    <tbody>
+    {{#actentity}}
+        <tr>
+            <th type="hidden" scope="row">{{id}}</th>
+            <b><td><p>{{anjiangaishu}}</p></td></b>
+        </tr>
+    {{/actentity}}
+    </tbody>
+</table>
+{{/actentity}}
+<a href="/articlesxw/{{actentity.id}}/edit" class="btn btn-primary" >修改</a>
+<!-- GET , a 태그 링크를 사용 -->
+<a href="/articlesxw/{{actentity.id}}/delete" class="btn btn-danger" >删除</a>
+<a href="/articlesxw" class="btn btn-primary" >返回清单</a>
+
+{{>articles/articlesXia}}

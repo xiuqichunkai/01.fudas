@@ -1,0 +1,19 @@
+<hr>
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1" ></i>
+        新闻清单
+    </div><br>
+<form class="container" action="/articlesxw/create" method="post">
+<!--    <div style="text-align: center;"><h2><strong>编写新闻</strong></h2></div><hr>-->
+    <div class="mb-3"><input class="form-control" type="text" name="xingming" placeholder="题目"  ></input></div>
+    <br><textarea class="form-control"  name="anjiangaishu" rows="10" placeholder="新闻内容" ></textarea>
+    <hr>
+    <div>
+        <div id="liveAlertPlaceholder"></div>
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}"/>
+        <div style="text-align: center;"> <button class="btn btn-primary" type="submit" ><h3>提交</h3></button> </div>
+    </div>
+    <br><br>
+</form>
+</div>

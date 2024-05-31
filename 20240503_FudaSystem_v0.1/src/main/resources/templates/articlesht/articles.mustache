@@ -1,0 +1,33 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        客户留言版
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">姓名</th>
+                <th scope="col">手机号</th>
+                <th scope="col">微信</th>
+                <th scope="col">邮箱</th>
+                <th scope="col">案件概述</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#articleHtEntityList}}
+                <tr>
+                    <th scope="row"><a href="/articlesht/{{id}}">{{id}}</a></th>
+                    <td><a href="/articlesht/{{id}}">{{xingming}}</a></td>
+                    <td>{{shoujihao}}</td>
+                    <td>{{sweixin}}</td>
+                    <td>{{youxiang}}</td>
+                    <td>{{anjiangaishu}}</td>
+                </tr>
+            {{/articleHtEntityList}}
+            </tbody>
+        </table>
+<!--        <a href="/articlesht/new">后天编写</a>-->
+    </div>
+</div>

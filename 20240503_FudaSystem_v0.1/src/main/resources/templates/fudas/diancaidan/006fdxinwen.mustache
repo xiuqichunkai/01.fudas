@@ -1,0 +1,30 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table me-1"></i>
+        新闻清单
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">题目</th>
+                <th scope="col">内容</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#articleXwEntityList}}
+                <tr>
+                    <th scope="row"><a href="/fuda/xinwen/{{id}}">{{id}}</a></th>
+                    <td><a href="/fuda/xinwen/{{id}}">{{xingming}}</a></td>
+                    <td>
+                        <span class="d-inline-block text-truncate" style="max-width: 150px;">
+                            {{anjiangaishu}}
+                        </span>
+                    </td>
+                </tr>
+            {{/articleXwEntityList}}
+            </tbody>
+        </table>
+    </div>
+</div>

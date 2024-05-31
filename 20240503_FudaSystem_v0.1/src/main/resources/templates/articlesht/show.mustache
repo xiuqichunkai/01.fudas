@@ -1,0 +1,32 @@
+{{>articles/articlesShang}}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">姓名</th>
+        <th scope="col">手机号</th>
+        <th scope="col">微信</th>
+        <th scope="col">邮箱</th>
+        <th scope="col">案件概述</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#actentity}}
+        <tr>
+            <th scope="row">{{id}}</th>
+            <td>{{xingming}}</td>
+            <td>{{shoujihao}}</td>
+            <td>{{sweixin}}</td>
+            <td>{{youxiang}}</td>
+            <td>{{anjiangaishu}}</td>
+        </tr>
+    {{/actentity}}
+    </tbody>
+</table>
+
+<a href="/articlesht/{{actentity.id}}/edit" class="btn btn-primary" >修改</a>
+<!-- GET , a 태그 링크를 사용 -->
+<a href="/articlesht/{{actentity.id}}/delete" class="btn btn-danger" >删除</a>
+<a href="/articlesht" class="btn btn-primary" >返回清单</a>
+
+{{>articles/articlesXia}}

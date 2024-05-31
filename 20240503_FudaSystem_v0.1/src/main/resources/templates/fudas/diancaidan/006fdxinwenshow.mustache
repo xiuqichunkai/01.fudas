@@ -1,0 +1,23 @@
+{{>fudas/caidan/caidanshang}}
+{{#articleXwEntityList}}
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <h1><td align="center"><b>{{xingming}}</b></td></h1><br>
+        </tr>
+        </thead>
+        <tbody>
+        {{#articleXwEntityList}}
+            <tr>
+                <th type="hidden" scope="row">{{id}}</th>
+                <b><td><p>{{anjiangaishu}}</p></td></b>
+            </tr>
+        {{/articleXwEntityList}}
+        </tbody>
+    </table>
+{{/articleXwEntityList}}
+
+<a href="/fuda/xinwen" class="btn btn-primary" >返回清单</a>
+
+{{>fudas/caidan/caidanxia}}
